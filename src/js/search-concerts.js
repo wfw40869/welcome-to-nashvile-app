@@ -3,7 +3,7 @@ const genreInput = document.querySelector("#concertGenre"),
     resultsContainer = document.querySelector("#displayedResults")
 
 
-
+getItinerary()
 
 genreSubmitButton.addEventListener("click", () => {
     //prevent default form behavior
@@ -28,8 +28,16 @@ genreSubmitButton.addEventListener("click", () => {
                     resultsContainer.innerHTML += renderResults(concert)
                 })
             }
+
+        })
+        .then(() => {
+            //save the event to the Itinerary API
             saveEventToItinerary()
         })
+        // .then(() => {
+        //     //get itinerary from API and display it to the dom
+        //     getItinerary()
+        // })
 })
 
 const saveEventToItinerary = () => {
@@ -38,12 +46,15 @@ const saveEventToItinerary = () => {
     saveToItineraryButtons.forEach(saveButton => {
         saveButton.addEventListener("click", (e) => {
             // select span to display itinerary, the Name of the Concert and location
-            const concertSpan = document.querySelector("#savedConcert__span"),
-                concertName = e.target.parentElement.childNodes[1],
-                concertLocation = e.target.parentElement.childNodes[5].children[0].textContent
-
-            // save event to itinerary
-            concertSpan.textContent = `${concertName.textContent} at ${concertLocation}`
+            const concertName = e.target.parentElement.childNodes[1].textContent,
+                concertLocation = e.target.parentElement.childNodes[5].children[0].textContent,
+                concertObject = {
+                    id: 1,
+                    concert: `${concertName} at ${concertLocation}`
+                }
+                
+            // save event to itinerary API
+            postOrPutItinerary("http://localhost:8088/itinerary?id=1", concertObject)
         })
     })
 }
