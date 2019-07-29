@@ -23,15 +23,34 @@ genreSubmitButton.addEventListener("click", () => {
             resultsContainer.innerHTML = ""
             // If the event isn't found or if the genre input is left blank
             if (concertResultsArray === undefined || genre === "") {
-                alert("No events found. Please try again")
+                resultsContainer.innerHTML = "No events found. Please try again"
             } else {
                 // loop through the concertResults array
                 concertResultsArray.events.forEach(concert => {
                     //add the concert to the results container
                     resultsContainer.innerHTML += renderResults(concert)
                 })
+                console.log(concertResultsArray.events)
             }
+            saveEventToItinerary()
         })
-
 })
+
+const saveEventToItinerary = () => {
+    const saveToItineraryButtons = document.querySelectorAll(".save__button")
+
+
+
+    saveToItineraryButtons.forEach(saveButton => {
+        saveButton.addEventListener("click", (e) => {
+            const concertSpan = document.querySelector("#savedConcert__span"),
+                concertName = e.target.parentElement.childNodes[1],
+                concertLocation = e.target.parentElement.childNodes[5].children[0].textContent
+            console.log(e)
+            console.log(e.target.parentElement.childNodes[1])
+            console.log(e.target.parentElement.childNodes[5].children)
+            concertSpan.textContent = `${concertName.textContent} at ${concertLocation}`
+        })
+    })
+}
 

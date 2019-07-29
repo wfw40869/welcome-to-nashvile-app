@@ -15,6 +15,7 @@
     </header>
 
     <main>
+        <!-- SEARCH FORM SECTION -->
         <section class="search__container">
             <form action="#" class="search__form">
                 <h2>Search for stuff to do today in Nashville</h2>
@@ -25,20 +26,27 @@
                 </fieldset>
             </form>
         </section>
+
+        <!-- ITINERARY SECTION -->
+        <section class="itinerary__container">
+            <h3>Itinerary</h3>
+            <ul id="itineraryContainer">
+                <li class="savedConcert__li"><p>Concert: <span id="savedConcert__span"></span></p></li>
+            </ul>
+        </section>
+
+        <!-- SEARCH RESULTS SECTION -->
         <section class="results__container">
             <h3>Results</h3>
             <ol id="displayedResults">
 
             </ol>
         </section>
-        <section class="itinerary__container">
-
-        </section>
     </main>
-
 
     <script src="js/render-results.js"></script>
     <script src="js/search-concerts.js"></script>
+    <script src="js/itinerary.js"></script>
 </body>
 
 </html>
