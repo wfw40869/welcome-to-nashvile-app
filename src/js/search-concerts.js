@@ -2,9 +2,6 @@ const genreInput = document.querySelector("#concertGenre"),
     genreSubmitButton = document.querySelector(".findConcertsButton"),
     resultsContainer = document.querySelector("#displayedResults")
 
-console.log(genreInput)
-console.log(genreSubmitButton)
-
 
 
 
@@ -30,7 +27,6 @@ genreSubmitButton.addEventListener("click", () => {
                     //add the concert to the results container
                     resultsContainer.innerHTML += renderResults(concert)
                 })
-                console.log(concertResultsArray.events)
             }
             saveEventToItinerary()
         })
@@ -39,16 +35,14 @@ genreSubmitButton.addEventListener("click", () => {
 const saveEventToItinerary = () => {
     const saveToItineraryButtons = document.querySelectorAll(".save__button")
 
-
-
     saveToItineraryButtons.forEach(saveButton => {
         saveButton.addEventListener("click", (e) => {
+            // select span to display itinerary, the Name of the Concert and location
             const concertSpan = document.querySelector("#savedConcert__span"),
                 concertName = e.target.parentElement.childNodes[1],
                 concertLocation = e.target.parentElement.childNodes[5].children[0].textContent
-            console.log(e)
-            console.log(e.target.parentElement.childNodes[1])
-            console.log(e.target.parentElement.childNodes[5].children)
+
+            // save event to itinerary
             concertSpan.textContent = `${concertName.textContent} at ${concertLocation}`
         })
     })
