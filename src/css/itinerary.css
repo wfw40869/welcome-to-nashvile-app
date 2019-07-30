@@ -1,0 +1,22 @@
+.savedConcert__li {
+  list-style-type: none;
+}
+
+#itineraryContainer {
+  padding: 0;
+}
+
+.itinerary__paragraph {
+    font-size: 1.2em;
+}
+
+#savedConcert__span {
+    font-weight: 300;
+}
+
+.itinerary__container {
+    display: block;
+    text-align: center;
+    background-color: #4592af;
+    color: #fcfcfc;
+}

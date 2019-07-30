@@ -1,15 +1,21 @@
-.section {
-    display: grid;
-    justify-content: center;
+.results__container {
+  display: grid;
+  justify-content: center;
 }
 #displayedResults {
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    grid-template-rows: 180px auto 180px;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
 }
 
 #displayedResults li {
-    margin: 0 10px;
+  margin: 0 10px;
+}
+
+.date__span,
+.location__span {
+  font-weight: 300;
 }

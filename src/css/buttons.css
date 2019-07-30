@@ -9,6 +9,7 @@
 .save__button {  
     padding: 0.5em;
     border-radius: 5px;
+    margin: 0 5px 0 0;
     vertical-align: middle;
     transition: background 250ms ease-in-out, 
                 transform 150ms ease;
@@ -17,7 +18,7 @@
 .save__button {
     border: none;
     background-color: #4592af;
-    color: #f6f5f5;
+    color: #fcfcfc;
     cursor: pointer;
     padding: 0.35em;
 }
@@ -27,7 +28,7 @@
 .tickets__button:hover,
 .tickets__button:active {
     background-color: #4592af;
-    color: #f6f5f5;
+    color: #fcfcfc;
 }
 
 .save__button:hover,
