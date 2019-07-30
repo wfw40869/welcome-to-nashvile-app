@@ -1,0 +1,42 @@
+/* COLOR PALETTE */
+/* 
+    Black: 33313b
+    White: f6f5f5
+    Tan: e3c4a8
+    Blue: 4592af
+
+*/
+
+/* CSS Reset and Basic Setup */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #33313b;
+  font-size: 12px;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Oswald", sans-serif;
+  outline: none;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+.section {
+  padding: 40px 0;
+}
+.itinerary__container {
+  border-bottom: 0.5px solid #838383;
+}

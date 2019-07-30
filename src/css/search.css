@@ -1,0 +1,20 @@
+header {
+  padding: 50px 0;
+  background-color: #e3c4a8;
+}
+
+.search__container {
+  text-align: center;
+}
+
+input {
+  -webkit-appearance: none;
+  padding: 5px;
+  border-radius: 0.4rem;
+  border: 0.5px solid white;
+  font-weight: 300;
+}
+
+input:focus {
+  box-shadow: 0.1px 0.1px 2px #96c2db;
+}
