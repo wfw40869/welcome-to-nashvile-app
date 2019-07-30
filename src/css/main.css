@@ -1,0 +1,24 @@
+/* COLOR PALETTE */
+/* 
+    Black: 33313b
+    White: f6f5f5
+    Tan: e3c4a8
+    Blue: 4592af
+
+*/
+
+/* CSS Reset and Basic Setup */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #33313b;
+    font-size: 12px;
+}
+
+body, input, textarea, button {font-family: 'Oswald', sans-serif;}
+
+h1,
+h2,
+h3 {text-align: center;}

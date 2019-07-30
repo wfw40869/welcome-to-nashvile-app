@@ -1,0 +1,37 @@
+
+.tickets__button { 
+    text-decoration: none; 
+    background-color: #e3c4a8;
+    color: #33313b;
+}
+
+.tickets__button,
+.save__button {  
+    padding: 0.5em;
+    border-radius: 5px;
+    vertical-align: middle;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+.save__button {
+    border: none;
+    background-color: #4592af;
+    color: #f6f5f5;
+    cursor: pointer;
+    padding: 0.35em;
+}
+
+/* HOVER EFFECTS */
+
+.tickets__button:hover,
+.tickets__button:active {
+    background-color: #4592af;
+    color: #f6f5f5;
+}
+
+.save__button:hover,
+.save__button:active {
+    background-color: #e3c4a8;
+    color: #33313b;
+}

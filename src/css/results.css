@@ -1,0 +1,15 @@
+.section {
+    display: grid;
+    justify-content: center;
+}
+#displayedResults {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 180px auto 180px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+#displayedResults li {
+    margin: 0 10px;
+}
