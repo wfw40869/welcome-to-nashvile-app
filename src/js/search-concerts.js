@@ -34,10 +34,7 @@ genreSubmitButton.addEventListener("click", () => {
             //save the event to the Itinerary API
             saveEventToItinerary()
         })
-        // .then(() => {
-        //     //get itinerary from API and display it to the dom
-        //     getItinerary()
-        // })
+
 })
 
 const saveEventToItinerary = () => {
