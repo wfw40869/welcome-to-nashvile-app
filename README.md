@@ -11,3 +11,4 @@ A simple application that allows the user to search for upcoming concerts in Nas
 3. Run json-server
 4. Install http-server
 5. Navigate to src directory of project and run http-server
+6. Run json server -p 8088 database.json -w to start the JSON Server

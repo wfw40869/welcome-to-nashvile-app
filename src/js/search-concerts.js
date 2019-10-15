@@ -51,7 +51,7 @@ const saveEventToItinerary = () => {
                 }
                 
             // save event to itinerary API
-            postOrPutItinerary("http://localhost:8088/itinerary?id=1", concertObject)
+            postOrPutItinerary("https://murmuring-hollows-75136.herokuapp.com/itinerary?id=1", concertObject)
         })
     })
 }

@@ -1,7 +1,8 @@
 const concertSpan = document.querySelector("#savedConcert__span")
+const url = `https://murmuring-hollows-75136.herokuapp.com`
 
 const getItinerary = () => {
-    fetch(`http://localhost:8088/itinerary`)
+    fetch(`${url}/itinerary`)
         .then(itinerary => itinerary.json())
         .then(parsedItinerary => {
             concertSpan.innerHTML = parsedItinerary.concert
